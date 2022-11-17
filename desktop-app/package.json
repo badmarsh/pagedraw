@@ -1,0 +1,37 @@
+{
+  "name": "Pagedraw",
+  "version": "1.0.1",
+  "description": "Pagedraw",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "engines": {
+    "node": "10.11.0"
+  },
+  "repository": "https://github.com/Pagedraw/pagedraw",
+  "keywords": [],
+  "author": "Pagedraw",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^4.0.1",
+    "electron-builder": "^22.8.1"
+  },
+  "build": {
+    "appId": "io.pagedraw.editor",
+    "files": [
+      "**/*",
+      "build/**/*"
+    ],
+    "mac": {
+      "category": "your.app.category.type",
+      "icon": "pagedraw-desktop-app-icon.icns"
+    }
+  },
+  "dependencies": {
+    "filendir": "^1.0.2",
+    "findup": "^0.1.5",
+    "fs-readdir-recursive": "^1.1.0"
+  }
+}
